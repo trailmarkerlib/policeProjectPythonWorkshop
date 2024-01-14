@@ -1,0 +1,15 @@
+﻿_id,Name,fieldName,fieldDescription,dataType,dataFormat,length,uniqueID,permittedValues,fieldPublicAccessLevel,fieldPublicAccessLevelComment
+1,Description,Field name,Description of the data field,"Data type (text, numeric, boolean, etc.)","Special details related to data format (number of decimal places, date format, etc.",Field length,Does this field contain a unique ID or primary key?,"Describes values permitted to be included in this field, if applicable","Describes if this field is subject to any public access limitations (public, sensitive, private)","An explanation for the field's selected “accessLevel” including instructions for how to access a restricted file, if applicable, or explanation for why a “non-public” or “restricted public” data asset is not “public,” if applicable. Also note options for making the data public, where appropriate, including obfuscation, aggregation, or anonymization."
+2,Required,Y,Y,N,N,N,N,N,N,N
+3,"",PK,"Automated, unique incident ID number",text,"","",Yes,"","",""
+4,"",CCR,Crime Report Number associated with the incident,text,"","","","","",""
+5,"",GENDER,Gender of offender,text,"","","","","",""
+6,"",RACE,Race of offender,text,"","","","","",""
+7,"",AGE,Age of offender,int,"","","","","",""
+8,"",CITEDTIME,Date and time citation was issued,date,"","","","","",""
+9,"",INCIDENTLOCATION,"Location of incident, at block or intersection level",text,"","","","",Sensitive,Published at the block level
+10,"",OFFENSES,Cited offense,text,"","","","","",""
+11,"",NEIGHBORHOOD,Neighborhood where incident took place,text,"","","","","",""
+12,"",INCIDENTZONE,Police Zone where incident took place,text,"","","","","",""
+13,"",X,The geocoded X coordinate of the incident location (using county geocoder),float,Coordinate,"","","","",""
+14,"",Y,The geocoded Y coordinate of the incident location (using county geocoder),float,Coordinate,"","","","",""
